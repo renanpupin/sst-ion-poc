@@ -1,7 +1,7 @@
 export const handler = async (event) => {
     console.log(event);
 
-    const message = process.env.SST_LIVE ? "Hello, Live!" : "Hello, World!";
+    const message = `Hello, from service 1! (${process.env.SST_LIVE ? 'live' : 'not live'})`
 
     return {
         statusCode: 200,

@@ -10,6 +10,7 @@ export default $config({
   },
   async run() {
     new sst.aws.ApiGatewayV2("MyApi")
-        .route("GET /", "index.handler")
+        .route("GET /", "services/service1/index.handler")
+        .route("GET /service2", "services/service2/index.handler")
   },
 });
