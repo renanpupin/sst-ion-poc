@@ -9,5 +9,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-sns": "^3.540.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "sst": "^3.0.1-7"
+  }
 }
